@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .ng-invalid:not(form), .ng-invalid.required  {
+        @apply border-pink-500 text-pink-600 focus:border-pink-500 focus:ring-pink-500
+    }
+    
+    .ng-valid[required], .ng-valid.required  {
+    }
+}
